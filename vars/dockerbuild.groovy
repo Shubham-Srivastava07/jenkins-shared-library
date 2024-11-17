@@ -1,3 +1,3 @@
-def call(String ProjectName, String ImageTag, String DockerHubUser){
-  sh "docker build -t ${imageName}:${imageVerssion} ."
+def call(String imageName, String imageVersion){
+  sh "docker build -t ${imageName}:${imageVersion} ."
 }
